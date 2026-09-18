@@ -1,27 +1,24 @@
-# -narciso_grade_equivalent-
-
-
 #include <stdio.h>
 
 int main() {
     int score;
-    char Grade;
+    char grade;
 
-    printf("Enter your grade:");
+    printf("Enter your score: ");
     scanf("%d", &score);
 
     if (score >= 90)
-        printf("Grade = 'A'");
+        grade = 'A';
     else if (score >= 80)
-        printf("Grade = 'B'");
+        grade = 'B';
     else if (score >= 70)
-        printf("Grade = 'C'");
+        grade = 'C';
     else if (score >= 60)
-        printf("Grade = 'D'");
+        grade = 'D';
     else
-        printf("Grade = 'F'");
+        grade = 'F';
 
-    printf("%c\n", Grade);
+    printf("Grade: %c\n", grade);
 
     return 0;
 }
